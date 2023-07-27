@@ -31,7 +31,7 @@ public class Minefinity
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
-
+//
     private void commonSetup(final FMLCommonSetupEvent event)
     {
 
