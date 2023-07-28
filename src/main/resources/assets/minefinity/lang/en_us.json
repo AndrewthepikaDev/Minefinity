@@ -1,0 +1,10 @@
+{
+  "item.minefinity.tin_ingot": "Tin Ingot",
+  "item.minefinity.raw_tin": "Raw Tin",
+
+  "block.minefinity.tin_block": "Block of Tin",
+  "block.minefinity.tin_ore": "Tin Ore",
+  "block.minefinity.deepslate_tin_ore": "Deepslate Tin Ore",
+
+  "itemGroup.minefinity_overworld": "Minefinity: Overworld"
+}
