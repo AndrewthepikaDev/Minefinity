@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minefinity:tin_ore",
+    "minefinity:deepslate_tin_ore",
+    "minefinity:tin_block"
+  ]
+}

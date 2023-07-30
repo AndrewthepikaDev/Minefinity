@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TTT",
+    "TTT",
+    "TTT"
+  ],
+  "key": {
+    "T": {
+      "item": "minefinity:tin_ingot"
+    }
+  },
+  "result": {
+    "item": "minefinity:tin_block"
+  }
+}

@@ -3,6 +3,8 @@ package net.andrewthepika.minefinity;
 import com.mojang.logging.LogUtils;
 import net.andrewthepika.minefinity.block.ModBlocks;
 import net.andrewthepika.minefinity.item.ModItems;
+import net.andrewthepika.minefinity.world.feature.ModConfiguredFeatures;
+import net.andrewthepika.minefinity.world.feature.ModPlacedFeatures;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -28,6 +30,8 @@ public class Minefinity
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
