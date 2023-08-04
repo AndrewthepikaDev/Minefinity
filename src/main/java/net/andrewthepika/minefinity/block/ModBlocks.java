@@ -1,6 +1,7 @@
 package net.andrewthepika.minefinity.block;
 
 import net.andrewthepika.minefinity.Minefinity;
+import net.andrewthepika.minefinity.block.custom.NetherBrickFurnaceBlock;
 import net.andrewthepika.minefinity.item.ModCreativeModeTab;
 import net.andrewthepika.minefinity.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -26,6 +27,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> TIN_BLOCK = registerBlock("tin_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.METAL).strength(24f).requiresCorrectToolForDrops()), ModCreativeModeTab.MINEFINITY_OVERWORLD);
     public static final RegistryObject<Block> TIN_ORE = registerBlock("tin_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)), ModCreativeModeTab.MINEFINITY_OVERWORLD);
     public static final RegistryObject<Block> DEEPSLATE_TIN_ORE = registerBlock("deepslate_tin_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE).strength(12f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)), ModCreativeModeTab.MINEFINITY_OVERWORLD);
+    public static final RegistryObject<Block> BRONZE_BLOCK = registerBlock("bronze_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.COPPER).strength(24f).requiresCorrectToolForDrops()), ModCreativeModeTab.MINEFINITY_OVERWORLD);
+
+    public static final RegistryObject<Block> NETHER_BRICK_FURNACE = registerBlock("nether_brick_furnace", () -> new NetherBrickFurnaceBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.NETHER_BRICKS).strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.MINEFINITY_NETHER);
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);

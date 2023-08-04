@@ -3,6 +3,8 @@
   "values": [
     "minefinity:tin_ore",
     "minefinity:deepslate_tin_ore",
-    "minefinity:tin_block"
+    "minefinity:tin_block",
+    "minefinity:bronze_block",
+    "minefinity:nether_brick_furnace"
   ]
 }

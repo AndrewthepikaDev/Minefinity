@@ -1,0 +1,12 @@
+{
+  "type": "minefinity:nether_brick_furnace_alloying",
+  "ingredients": [
+    {
+      "0": "minecraft:copper_ingot",
+      "1": "minefinity:tin_ingot"
+    }
+  ],
+  "output": {
+    "item": "minefinity:bronze_ingot"
+  }
+}

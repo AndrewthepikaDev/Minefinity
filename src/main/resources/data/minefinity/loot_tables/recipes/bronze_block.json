@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minefinity:bronze_ingot"
+    }
+  },
+  "result": {
+    "item": "minefinity:bronze_block"
+  }
+}

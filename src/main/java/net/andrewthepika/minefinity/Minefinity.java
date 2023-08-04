@@ -2,9 +2,14 @@ package net.andrewthepika.minefinity;
 
 import com.mojang.logging.LogUtils;
 import net.andrewthepika.minefinity.block.ModBlocks;
+import net.andrewthepika.minefinity.block.entity.ModBlockEntities;
 import net.andrewthepika.minefinity.item.ModItems;
+import net.andrewthepika.minefinity.recipe.ModRecipes;
+import net.andrewthepika.minefinity.screen.ModMenuTypes;
+import net.andrewthepika.minefinity.screen.NetherBrickFurnaceScreen;
 import net.andrewthepika.minefinity.world.feature.ModConfiguredFeatures;
 import net.andrewthepika.minefinity.world.feature.ModPlacedFeatures;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -30,8 +35,11 @@ public class Minefinity
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -52,7 +60,7 @@ public class Minefinity
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            MenuScreens.register(ModMenuTypes.NETHER_BRICK_FURNACE_MENU.get(), NetherBrickFurnaceScreen::new);
         }
     }
 }
