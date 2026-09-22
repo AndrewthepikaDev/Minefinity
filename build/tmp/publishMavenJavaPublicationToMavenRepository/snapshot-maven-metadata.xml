@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>net.andrewthepika</groupId>
+  <artifactId>Minefinity</artifactId>
+  <versioning>
+    <lastUpdated>20260922144233</lastUpdated>
+    <snapshot>
+      <timestamp>20260922.144233</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.0-20260922.144233-1</value>
+        <updated>20260922144233</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0-20260922.144233-1</value>
+        <updated>20260922144233</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>module</extension>
+        <value>1.0-20260922.144233-1</value>
+        <updated>20260922144233</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+  <version>1.0-SNAPSHOT</version>
+</metadata>
