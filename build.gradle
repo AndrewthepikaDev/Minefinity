@@ -3,6 +3,7 @@ plugins {
     id 'maven-publish'
     id 'idea'
     id 'net.neoforged.moddev' version '2.0.147'
+    id 'org.moddedmc.wiki.toolkit' version '0.5.0'
 }
 
 version = mod_version
@@ -10,7 +11,11 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
+    maven {
+        url "https://maven.sinytra.org"
+    }
 }
+
 
 base {
     archivesName = mod_id
@@ -78,6 +83,15 @@ neoForge {
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
             logLevel = org.slf4j.event.Level.DEBUG
         }
+        exportClient {
+            client()
+            systemProperty 'wiki_exporter.enabled', 'true'
+        }
+        exportServer {
+            server()
+            programArgument 'nogui'
+            systemProperty 'wiki_exporter.enabled', 'true'
+        }
     }
 
     mods {
@@ -116,6 +130,7 @@ dependencies {
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+    runtimeOnly "org.sinytra:item-asset-export-neoforge:1.0.2+1.21"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -163,5 +178,14 @@ idea {
     module {
         downloadSources = true
         downloadJavadoc = true
+    }
+}
+wiki {
+    docs {
+        // The name of the object (examplemod) should match the registered wiki project ID (if it exists).
+        minefinity {
+            // The path to the folder containing the documentation metadata file (sinytra-wiki.json)
+            root = file('wiki/minefinity')
+        }
     }
 }
