@@ -5,5 +5,11 @@
   "platforms": {
     "curseforge": "1708479",
     "modrinth": "minefinity"
+  },
+  "owners": [ "andrewthepikadev" ],
+  "licenses": {
+    "project": {
+      "id": "MIT"
+    }
   }
 }
