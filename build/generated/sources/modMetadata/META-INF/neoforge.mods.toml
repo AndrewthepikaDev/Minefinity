@@ -17,7 +17,7 @@ license = "MIT"
 # The modid of the mod
 modId = "minefinity" #mandatory
 # The version number of the mod
-version = "1.0-SNAPSHOT" #mandatory
+version = "0.0.0.1" #mandatory
 # A display name for the mod
 displayName = "Minefinity" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://docs.neoforge.net/docs/misc/updatechecker/
@@ -29,7 +29,7 @@ displayName = "Minefinity" #mandatory
 # A text field displayed in the mod UI
 #credits="" #optional
 # A text field displayed in the mod UI
-authors = "Andrewthepika" #optional
+authors = "Andrewthepika, Aleph Null Studios" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 description = '''A mod that extends Minecraft's progression to comically absurd levels.'''
