@@ -1,0 +1,2 @@
+/give Dev minefinity:nickel_ingot
+/give Dev minefinity:raw_nickel
