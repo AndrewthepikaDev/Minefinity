@@ -3,7 +3,8 @@
   "id": "minefinity",
   "modid": "minefinity",
   "platforms": {
-    "curseforge": "minefinity"
+    "curseforge": "1708479",
+    "modrinth": "minefinity"
   },
   "owners": [ "andrewthepikadev" ],
   "licenses": {
