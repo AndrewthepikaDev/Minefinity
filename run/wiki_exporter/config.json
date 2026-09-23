@@ -1,0 +1,17 @@
+{
+  "output_path": "wiki_exporter",
+  "enabled": [
+    "metadata",
+    "render"
+  ],
+  "modules": {
+    "render": {
+      "namespaces": [
+        "minecraft",
+        "minefinity"
+      ],
+      "resolution": 512,
+      "png": true
+    }
+  }
+}
